@@ -1,36 +1,53 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Fullstack Portfolio
 
-## Getting Started
+A responsive Next.js and Tailwind CSS showcase for a hands-on learning milestone: **Portfolio Mastery: Full Stack Web Development Workshop**, held at Taylor's University on April 26, 2024.
 
-First, run the development server:
+The workshop introduced the modern web stack and provided practical exposure to **Next.js**, **Tailwind CSS**, and **Firebase**. This site presents that experience as a small portfolio landing page.
+
+## What is in this repo
+
+- A responsive, accessible portfolio page built with the Next.js App Router.
+- Custom styling with Tailwind CSS and a small set of bespoke CSS details.
+- A workshop milestone section with the supplied event, date, location, and technologies.
+- A clean install using the normal Next.js project dependencies.
+
+Firebase is presented as part of the workshop stack, but this showcase does not connect to a Firebase project. There is no Firebase SDK, backend, API key, or service configuration to maintain.
+
+## Run locally
+
+Requires Node.js 20.9 or newer and npm.
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Other useful commands:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run lint
+npm run build
+```
 
-## Learn More
+`node_modules/` is generated locally by npm and excluded from Git; do not commit it.
 
-To learn more about Next.js, take a look at the following resources:
+## Deploy
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+This Next.js app can be deployed to a Next.js-compatible host such as Vercel. No environment variables or Firebase setup are needed.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Project structure
 
-## Deploy on Vercel
+```text
+src/app/
+  globals.css   Responsive styles and Tailwind CSS import
+  layout.tsx    Root layout and page metadata
+  page.tsx      Portfolio landing page
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Workshop recognition
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+> In recognition of successful completion of the hands-on Portfolio Mastery: Full Stack Web Development Workshop event held at Taylor's University on April 26, 2024. The event provided exposure to the full-stack technology stack of modern web development and hands-on experience with Next.js, Tailwind CSS, and Firebase.
+
+This repository is a personal showcase inspired by the workshop; it is not an official event or university website.
